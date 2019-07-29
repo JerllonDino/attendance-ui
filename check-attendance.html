@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance - Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		#today-sched .list-group .list-group-item{
+			padding: 5px;
+		}
+		.time div {
+			border-radius: .25rem;
+		}
+		.list-group {
+			border-radius: 0px !important;
+		}
+		.students .list-group-item {
+			padding: 0px;
+			border-radius: 0px !important;
+			border-color: transparent;
+			background: #e6edf5;
+			margin-bottom: 5px;
+			color: #0B4F6C;
+		}
+		small {
+			color :#0B4F6C;
+		}
+		#date {
+			background: #e6edf5;
+		}
+		.btn-success {
+			color: #166528 !important;
+		}
+		.btn-danger {
+			color: #84242d !important;
+		}
+		.bg-warning {
+			background: #FDE74C !important;
+		}
+		.btn-warning {
+			background: #FDE74C !important;
+			border-color: #FDE74C!important;
+			color: #827729 !important;
+		}
+		.modal {
+			vertical-align: middle;
+		}
+		#summary {
+			margin: 0px;
+		}
+		#summary .list-group-item {
+			padding: 10px;
+			border-color: transparent;
+		}
+		.modal {
+			margin-top: 25vh;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="fixed-top">
+		<nav class="navbar navbar-expand navbar-dark bg-secondary p-3"  id="mainNav">
+		  <div class="collapse navbar-collapse">
+		    <ul class="navbar-nav mr-auto">
+		    	<li class="nav-item text-white" id="nav-toggle"><i class="fas fa-arrow-left mr-2"></i> Attendance</li>
+		    </ul>
+		  </div>
+		</nav>
+		<div>
+			<div class="d-flex p-2" id="date">
+				<div>
+					<i class="fas fa-calendar-alt text-secondary"></i>
+				</div>
+				<div class="ml-2">
+					<small>July 17, 2019</small>
+				</div>
+				<div class="ml-auto">
+					<i class="fas fa-sort text-secondary"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div>
+
+		<div style="margin-top: 96px;">
+			<span class="text-secondary m-1">A</span>
+			<ul class="list-group students">
+				<li class="list-group-item d-flex">
+					<div class="p-1">
+						<img src="http://www.ctcd.edu/ctcd/assets/Image/homepage/CC-high-school_400x400.jpg" class="img-fluid rounded-circle" width="30">
+					</div>
+					<div class="p-2 ml-2">
+						Anthony, Padilla B.
+					</div>
+					<div class="ml-auto bg-success">
+						<button class="btn btn-md btn-success">
+							<i class="fas fa-check"></i>
+						</button>
+					</div>
+				</li>
+			</ul>
+
+			
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<button class="btn btn-md d-block w-75 mx-auto btn-primary mt-3" style="box-shadow: 0px 18px 20px -12px #1482b1a6;">
+					<i class="fas fa-check"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header border">
+        <p class="modal-title text-primary small"><strong >Confirm Attendance</strong></p>
+      </div>
+      <div class="modal-body mt-0">
+       	<!-- <ul class="list-group" id="summary">
+       		<li class="list-group-item">
+       			<span class="text-warning">
+       				<small>35 students</small>
+       			</span>
+       		</li>
+       		<li class="list-group-item">
+       			<span>
+       				<small>35 students</small>
+       			</span>
+       		</li>
+       	</ul>  -->
+       
+      </div>
+      <div class="modal-footer p-0 border-0">
+      	<button class="btn bg-transparent text-primary">Cancel</button>
+      	<button class="btn bg-transparent text-primary"><strong>Confirm</strong></button>
+      	<!-- <div class="w-100 d-flex text-white">
+      		<button class="btn p-1 bg-light text-secondary text-white w-50 rounded-0 text-white border-right-dark">Cancel</button>
+      		<button class="btn p-1 bg-secondary w-50 rounded-0 text-white">Confirm</button>
+      	</div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#exampleModal').modal('show');
+	});
+</script>
+
+</html>

@@ -1,0 +1,54 @@
+body {
+	color: #0B4F6C;
+}
+#profile {
+	background: url('../img/profile-bg.png');
+
+}
+#side-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background: white;
+	z-index: 999999;
+}
+#mainNav {
+	//box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: black;
+	opacity: 0.5;
+	z-index: 999998;
+}
+.bg-primary {
+	background: #01BAEF !important;
+}
+.text-primary {
+	color: #0B4F6C !important;
+}
+.btn-primary {
+	background: #0f6488 !important;
+	border-color: #0f6488 !important;
+}
+.bg-secondary {
+	background: #0B4F6C !important;
+}
+.badge-secondary {
+	background: #0B4F6C !important;
+}
+.bg-headline {
+	background: #0f6488;
+	border-color: transparent !important;
+}
+.text-secondary {
+	color: #3b5b69 !important;
+}
+.btn-transparent {
+	background: transparent;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance - Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		#side-nav .list-group .list-group-item {
+			border-color: rgba(10, 94, 124, 0.14);
+		}
+		#sign-out {
+			text-decoration: underline;
+		}
+		#today-sched .list-group .list-group-item {
+			border-color: transparent !important;
+			background: #e6edf5;
+			margin-bottom:.25rem;
+		}
+		#today-sched .list-group .list-group-item{
+			padding: 3px;
+		}
+		.time div {
+			border-radius: .25rem;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand navbar-dark bg-secondary p-3"  id="mainNav">
+	  <div class="collapse navbar-collapse">
+	    <ul class="navbar-nav mr-auto">
+	    	<li class="nav-item text-white" id="nav-toggle"><i class="fas fa-bars mr-2"></i> Home</li>
+	    </ul>
+	   
+	    <ul class="navbar-nav ml-auto">
+	    	<li class="nav-item text-white"><i class="fas fa-user"></i><sub><span class="badge badge-danger">0</span></sub></li>
+	    </ul>
+	  </div>
+	  <div id="side-nav" style="left: -100%;">
+	  	
+	  	<!-- Profile  -->
+	  	<div id="profile" class="w-100 p-4">
+	  		<img src="http://www.ctcd.edu/ctcd/assets/Image/homepage/CC-high-school_400x400.jpg" class="img-fluid rounded-circle" width="50">
+	  		<div class="mt-2 text-white">
+	  			<p class="small m-0">
+	  				<strong>Mr. Jeremiah Baraoil</strong>
+	  				<br/>
+	  				<a href="#" class="text-white" id="sign-out">Sign Out</a>
+	  			</p>
+	  			<small class="small m-0"></small>
+	  		</div>
+	  	</div>
+
+	  	<ul class="list-group list-group-flush small">
+	  		<li class="list-group-item text-main">
+	  			<span><i class="fas fa-book mr-3"></i></span>
+	  			<span>Subjects</span>
+	  		</li>
+	  		<li class="list-group-item text-main">
+	  			<span><i class="fas fa-sync mr-3"></i></span>
+	  			<span>Sub Teacher</span>
+	  		</li>
+	  	</ul>
+	  </div>
+	  <div id="overlay" style="display: none;"></div>
+	</nav>
+
+	<!-- Current Class -->
+	<div class="card bg-headline text-white rounded-0 border-0" >
+		<div class="card-body">
+			<div class="row">
+				<div class="col-10">
+					<small>Current Class : </small>
+					<h5 class="mb-0">Math</h5>
+					<p class="small m-0">Monday 3:30am-4:30am</p>
+				</div>
+				<div class="col-2 d-flex align-items-center justify-content-center" style="font-size: 20px;">
+					&gt;
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="p-2">
+		<div class="row">
+			<div class="col">
+				
+				<!-- Today's Schedule -->
+				<div class="mt-2" id="today-sched">
+					<small class="text-main"><i class="fas fa-calendar-alt mr-2"></i> July 18, 2019</small>
+					<ul class="list-group small mt-2">
+						<li class="list-group-item d-flex p-0">
+							<div class="p-1 text-main">
+								English 1 
+							</div>
+							<div class="d-flex ml-auto time">
+								<div class="bg-primary text-white p-0 rounded-0"><small class="p-2">08:00am</small></div>
+								<div class="bg-secondary text-white p-0 rounded-0"><small class="p-2">09:00am</small></div>
+							</div>
+						</li>
+						<li class="list-group-item d-flex p-0">
+							<div class="p-1 text-main">
+								English 1 
+							</div>
+							<div class="d-flex ml-auto time">
+								<div class="bg-primary text-white p-0 rounded-0"><small class="p-2">08:00am</small></div>
+								<div class="bg-secondary text-white p-0 rounded-0"><small class="p-2">09:00am</small></div>
+							</div>
+						</li>
+						<li class="list-group-item d-flex p-0">
+							<div class="p-1 text-main">
+								English 1 
+							</div>
+							<div class="d-flex ml-auto time">
+								<div class="bg-primary text-white p-0 rounded-0"><small class="p-2">08:00am</small></div>
+								<div class="bg-secondary text-white p-0 rounded-0"><small class="p-2">09:00am</small></div>
+							</div>
+						</li>
+						<li class="list-group-item d-flex p-0">
+							<div class="p-1 text-main">
+								English 1 
+							</div>
+							<div class="d-flex ml-auto time">
+								<div class="bg-primary text-white p-0 rounded-0"><small class="p-2">08:00am</small></div>
+								<div class="bg-secondary text-white p-0 rounded-0"><small class="p-2">09:00am</small></div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+
+</html>

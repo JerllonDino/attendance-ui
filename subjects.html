@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance - Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style type="text/css">
+		#accordionEx .card {
+			border-radius: 0px;
+			border-color:#0b4f6c45;
+			border-left-width: 0px;
+			border-right-width: 0px;
+			border-bottom-width: 0px;
+		}
+		#accordionEx .card:last-child {
+			border-bottom-width: 1px;
+		}
+		#accordionEx .card-header {
+			padding: 15px;
+			border-bottom: 0px;
+			//background: #e6edf5;
+			text-align: center;
+		}
+		#accordionEx h5 {
+			font-size: 80%;
+    		font-weight: 400;
+    		color: #0B4F6C;
+    		text-align: left;
+		}
+		#accordionEx .btn-link {
+			color: #0b4f6c;
+		}
+		#accordionEx a:hover {
+			text-decoration: none;
+		}
+		#accordionEx .list-group-item {
+			background: #0B4F6C;
+			color: white;
+		}
+		/*#accordionEx .card-body .list-group-item {
+			border-bottom-color: #072f40;
+		}*/
+		.rotate {
+		    -moz-transition: all .3s linear;
+		    -webkit-transition: all .3s linear;
+		    transition: all .3s linear;
+		}
+		.rotate.down {
+		    -moz-transform:rotate(-180deg);
+		    -webkit-transform:rotate(-180deg);
+		    transform:rotate(-180deg);
+		}
+	</style>
+
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand navbar-dark bg-secondary p-3"  id="mainNav">
+	  <div class="collapse navbar-collapse">
+	    <ul class="navbar-nav mr-auto">
+	    	<li class="nav-item text-white" id="nav-toggle"><i class="fas fa-bars mr-2"></i> Subjects</li>
+	    </ul>
+	   
+	    <ul class="navbar-nav ml-auto">
+	    	<li class="nav-item text-white"><i class="fas fa-user"></i><sub><span class="badge badge-danger">0</span></sub></li>
+	    </ul>
+	  </div>
+	  <div id="side-nav" style="left: -100%;">
+	  	
+	  	<!-- Profile  -->
+	  	<div id="profile" class="w-100 p-4">
+	  		<img src="http://www.ctcd.edu/ctcd/assets/Image/homepage/CC-high-school_400x400.jpg" class="img-fluid rounded-circle" width="50">
+	  		<div class="mt-2 text-white">
+	  			<p class="small m-0">
+	  				<strong>Mr. Jeremiah Baraoil</strong>
+	  				<br/>
+	  				<a href="#" class="text-white" id="sign-out">Sign Out</a>
+	  			</p>
+	  			<small class="small m-0"></small>
+	  		</div>
+	  	</div>
+
+	  	<ul class="list-group list-group-flush small">
+	  		<li class="list-group-item text-main">
+	  			<span><i class="fas fa-book mr-3"></i></span>
+	  			<span>Subjects</span>
+	  		</li>
+	  		<li class="list-group-item text-main">
+	  			<span><i class="fas fa-sync mr-3"></i></span>
+	  			<span>Sub Teacher</span>
+	  		</li>
+	  	</ul>
+	  </div>
+	  <div id="overlay" style="display: none;"></div>
+	</nav>
+
+	<div class="p-0">
+		<div class="row">
+			<div class="col">
+				
+				<!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingOne1">
+      <a class="collapsed d-flex" data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="false"
+        aria-controls="collapseOne1">
+       <h5 class="mb-0">
+         English
+        </h5>
+        <h5 class="mb-0 ml-auto rotate"><i class="fas fa-angle-down rotate-icon"></i></h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseOne1" class="collapse" role="tabpanel" aria-labelledby="headingOne1"
+      data-parent="#accordionEx">
+      <div class="card-body p-0 bg-primary">
+      	<ul class="list-group  list-group-flush small bg-primary">
+      		<li class="list-group-item">Section A</li>
+      		<li class="list-group-item">Section B</li>
+      		<li class="list-group-item">Section C</li>
+      	</ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingTwo2">
+      <a class="collapsed d-flex" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+        aria-expanded="false" aria-controls="collapseTwo2">
+        <h5 class="mb-0">
+          Math
+        </h5>
+        <h5 class="mb-0 ml-auto rotate"><i class="fas fa-angle-down rotate-icon"></i></h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+      data-parent="#accordionEx">
+      <div class="card-body">
+       
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+  <!-- Accordion card -->
+  <div class="card">
+
+    <!-- Card header -->
+    <div class="card-header" role="tab" id="headingThree3">
+      <a class="collapsed d-flex" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+        aria-expanded="false" aria-controls="collapseThree3">
+        <h5 class="mb-0">
+          Filipino
+        </h5>
+        <h5 class="mb-0 ml-auto rotate"><i class="fas fa-angle-down rotate-icon"></i></h5>
+      </a>
+    </div>
+
+    <!-- Card body -->
+    <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+      data-parent="#accordionEx">
+      <div class="card-body">
+       
+      </div>
+    </div>
+
+  </div>
+  <!-- Accordion card -->
+
+</div>
+<!-- Accordion wrapper -->
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#accordionEx .card-header a').on('click', function () {
+  			$(this).find('.rotate').toggleClass("down");
+		})
+	})
+</script>
+
+</html>
